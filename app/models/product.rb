@@ -6,4 +6,8 @@ class Product < ActiveRecord::Base
     with: %r{\.(gif|jpg|png)\Z}i,
     message: 'must be a URL for GIF, JPG or PNG image.'
   }
+  validates :title, length: {
+    minimum: 10,
+    message: 'is at least 10 characters'
+  }
 end
