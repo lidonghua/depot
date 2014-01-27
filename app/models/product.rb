@@ -10,4 +10,8 @@ class Product < ActiveRecord::Base
     minimum: 10,
     message: 'is at least 10 characters'
   }
+
+  def self.latest
+    Product.order(:updated_at).last
+  end
 end
