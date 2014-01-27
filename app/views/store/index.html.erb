@@ -3,7 +3,9 @@
 <% end %>
 
 <h1>Your Pragmatic Catalog</h1>
-<p>You visited <%= pluralize @count, 'time' %>.</p>
+<% if @count > 5 %>
+  <p>You visited <%= pluralize @count, 'time' %>.</p>
+<% end %>
 
 <% cache ['store', Product.latest] do %>
   <% @products.each do |product| %>
