@@ -1,1 +1,4 @@
 $('#cart').html("<%= escape_javascript render(@cart) %>");
+
+$('#current_item').css({ 'background-color': '#8f8' })
+  .animate({ 'background-color': '#141'}, 2000);
