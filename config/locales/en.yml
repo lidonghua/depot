@@ -37,6 +37,18 @@ en:
       empty: 'Empty Cart'
       cancel: 'Cancel Order'
       checkout: 'Checkout'
+  orders:
+    new:
+      legend: 'Please Enter Your Details'
+    form:
+      name: 'Name'
+      address: 'Address'
+      email: 'E-mail'
+      pay_type: 'Pay with'
+      pay_prompt: 'Select a payment method'
+      submit: 'Place Order'
+
+  thanks: 'Thank you for your order.'
 
   number:
     currency:

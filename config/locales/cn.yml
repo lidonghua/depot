@@ -16,6 +16,18 @@ cn:
       empty: '清空购物车'
       cancel: '取消订单'
       checkout: '结算'
+  orders:
+    new:
+      legend: '请填写订单详情'
+    form:
+      name: '姓名'
+      address: '地址'
+      email: '电子邮件'
+      pay_type: '付款方式'
+      pay_prompt: '请选择付款方式'
+      submit: '下订单'
+
+  thanks: '感谢您下了订单'
 
   number:
     currency:
@@ -25,3 +37,23 @@ cn:
         separator: '.'
         delimiter: ','
         format: '%n&nbsp;%u'
+
+  activerecord:
+    models:
+      order: '订单'
+    attributes:
+      order:
+        name: '姓名'
+        address: '地址'
+        email: '电子邮件'
+        pay_type: '付款方式'
+    errors:
+      messages:
+        inclusion: '必须是其中之一'
+        blank: '不能为空'
+  errors:
+    template:
+      body: '存在一下问题：'
+      header:
+        one: '一个错误阻止了 %{model} 的保存'
+        other: '%{count} 个错误阻止了 %{model} 的保存'
