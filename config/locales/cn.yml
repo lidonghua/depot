@@ -1,0 +1,27 @@
+cn:
+  layouts:
+    application:
+      title: '编程书架'
+      home: '首页'
+      questions: '问题'
+      news: '新闻'
+      contact: '联系方式'
+  store:
+    index:
+      title_html: '编程书籍类目'
+      add_html: '添加到购物车'
+  carts:
+    cart:
+      title: '购物车'
+      empty: '清空购物车'
+      cancel: '取消订单'
+      checkout: '结算'
+
+  number:
+    currency:
+      format:
+        unit: '美元'
+        precision: 2
+        separator: '.'
+        delimiter: ','
+        format: '%n&nbsp;%u'

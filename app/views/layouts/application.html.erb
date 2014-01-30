@@ -9,7 +9,7 @@
 <body class="<%= controller.controller_name %>">
   <div id="banner">
     <%= image_tag 'logo.png' %>
-    <%= @page_title || 'Pragmatic Bookshelf' %>
+    <%= @page_title || t('.title') %>
   </div>
   <div id="columns">
     <div id="side">
@@ -19,10 +19,10 @@
         <% end %>
       <% end %>
       <ul>
-        <li><a href="#">Home</a></li>
-        <li><a href="#">Questions</a></li>
-        <li><a href="#">News</a></li>
-        <li><a href="#">Contact</a></li>
+        <li><a href="#"><%= t '.home' %></a></li>
+        <li><a href="#"><%= t '.questions' %></a></li>
+        <li><a href="#"><%= t '.news' %></a></li>
+        <li><a href="#"><%= t '.contact' %></a></li>
       </ul>
       <% if session[:user_id] %>
         <ul>
