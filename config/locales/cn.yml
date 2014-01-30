@@ -26,6 +26,10 @@ cn:
       pay_type: '付款方式'
       pay_prompt: '请选择付款方式'
       submit: '下订单'
+    payment_types:
+      check: "支票"
+      credit_card: "信用卡"
+      purchase_order: "支付订单"
 
   thanks: '感谢您下了订单'
 
